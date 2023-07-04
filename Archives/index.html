@@ -1,0 +1,51 @@
+<!-- Código HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>To Do List</title>
+
+    <!-- Importando Google Font -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Importanto o arquivo CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Criando uma classe Container para armazenar objetos -->
+    <div class="container">
+      <!-- Criando uma classe New Task Container -->
+      <div class="new-task-container">
+        <!-- Criando uma classe New Task Input para entrada de dados -->
+        <input
+          type="text"
+          class="new-task-input"
+          placeholder="Add The Task Here!"
+        />
+        <button class="new-task-button">Add</button>
+      </div>
+      <!-- Criando uma classe Task Container que será usada no JS  -->
+      <div class="task-container"></div>
+    </div>
+
+    <!-- Importando o Script JavaScript -->
+    <script src="./scripts.js"></script>
+  </body>
+</html>
