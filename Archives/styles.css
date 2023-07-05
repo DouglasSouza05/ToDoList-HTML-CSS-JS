@@ -1,3 +1,5 @@
+/* Código CSS */
+
 /* 
 Seletor "*" define o estilo global, para todos os elementos da página 
 "margin: 0" define a margem dos elementos
@@ -79,7 +81,11 @@ body {
 
 .new-task-input:focus {
   outline: none;
-  border-color: palevioletred;
+  border-color: green;
+}
+
+.new-task-input::placeholder {
+  color: green;
 }
 
 .new-task-button {
@@ -89,7 +95,7 @@ body {
   border-radius: 10px;
   font-weight: 500;
   height: 100%;
-  background-color: palevioletred;
+  background-color: green;
   color: white;
   padding: 12px;
   margin-left: 12px;
@@ -101,6 +107,18 @@ body {
   padding: 30px 20px;
   margin-top: 10px;
   border-radius: 10px;
-  box-shadow: 0 15px 30px, rgba(0, 0, 0, 0.3));
+  box-shadow: 0 15px 30px, rgba(0, 0, 0, 0.3);
   width: 100%;
+}
+
+/* Utilities */
+
+/* Usando !important para dar prioridade a regra */
+.error {
+  border: 1px solid red !important;
+}
+
+/* Fazendo com que o placeholder também fique vermelho caso aconteça erro na validação */
+.error::placeholder {
+  color: red;
 }
