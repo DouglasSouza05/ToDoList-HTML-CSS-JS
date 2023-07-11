@@ -1,0 +1,27 @@
+// Função para estilizar a task concluída. Usando classe "completed"
+const handleClick = (taskContent) => {
+  // Constante que pega todos os "task-item" dentro do taskContainer
+  // OBS: Por algum motivo a função .childNodes não funcionou, somente .children forneceu a solução para o problema. Nesse caso o erro era:
+  // Uncaught TypeError: Cannot read properties of null (reading 'isSameNode')
+  //   at handleClick (scripts.js:40:25)
+  //   at HTMLParagraphElement.<anonymous> (scripts.js:71:5)
+  const tasks = taskContainer.children;
+
+  // Percorrendo todos os "task-item" e conferindo se é igual ao taskContent que recebeu o click
+  for (const item of tasks) {
+    if (item.firstChild.isSameNode(taskContent)) {
+      // Se igual, vai mudar a class do taskContent para "completed" e vice-versa (toggle)
+      item.firstChild.classList.toggle("completed");
+    }
+  }
+};
+
+Possível explicação para o problema:
+
+childNodes retorna todos os nós filhos, incluindo nós de texto, nós de comentário e nós de elemento. Isso significa que, 
+além dos elementos HTML desejados, você também obtém nós de texto e nós de comentário que podem estar presentes entre os 
+elementos.
+
+children, por outro lado, retorna apenas os nós de elemento que são filhos diretos do elemento em questão, excluindo nós de 
+texto e nós de comentário. Isso torna o uso de children mais adequado quando você deseja trabalhar especificamente com os 
+elementos HTML filhos e não está interessado em nós de texto ou nós de comentário.

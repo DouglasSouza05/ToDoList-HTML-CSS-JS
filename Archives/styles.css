@@ -61,6 +61,7 @@ body {
   border-radius: 10px;
 }
 
+/* Primeiro container -> Input */
 .new-task-container {
   background-color: white;
   padding: 30px 20px;
@@ -69,6 +70,7 @@ body {
   display: flex;
 }
 
+/* Container do "Add the Task Here" */
 /* Poderia ser usado .new-task-input {} */
 .new-task-container input {
   flex: 3;
@@ -77,8 +79,10 @@ body {
   border-radius: 10px;
   padding: 12px;
   font-weight: 500;
+  cursor: pointer;
 }
 
+/* Foco do Container do "Add the Task Here" quando há o click */
 .new-task-input:focus {
   outline: none;
   border-color: green;
@@ -88,6 +92,7 @@ body {
   color: green;
 }
 
+/* Button "Add" do Input */
 .new-task-button {
   flex: 1;
   font-size: 1rem;
@@ -102,6 +107,7 @@ body {
   cursor: pointer;
 }
 
+/* Container em que ficará as tasks criadas */
 .task-container {
   background-color: white;
   padding: 30px 20px;
@@ -111,12 +117,14 @@ body {
   width: 100%;
 }
 
+/* Texto do parágrafo */
 .task-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 6px;
   margin-top: 6px;
+  color: rgba(215, 43, 158);
 }
 
 /* Estilizando o delete button */
@@ -125,6 +133,24 @@ body {
   color: white;
   padding: 8px;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Fazendo mesma coisa o ".task-item i" */
+/* .task-item i:hover {
+  cursor: pointer;
+} */
+
+.task-on {
+  cursor: pointer;
+}
+
+/* Estilizando o taskContent */
+.task-on::before {
+  content: "\25CF";
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
 }
 
 /* Utilities */
@@ -137,4 +163,23 @@ body {
 /* Fazendo com que o placeholder também fique vermelho caso aconteça erro na validação */
 .error::placeholder {
   color: red;
+}
+
+/* Personalizando classe completed  */
+.completed {
+  text-decoration: line-through;
+}
+
+/* .completed::before {
+  content: "\2705";
+  display: inline-block;
+  margin-right: 5px;
+} */
+
+/* Personalizando ícone para tarefa concluída */
+.completed::before {
+  content: "\25CF";
+  display: inline-block;
+  margin-right: 5px;
+  color: green;
 }
