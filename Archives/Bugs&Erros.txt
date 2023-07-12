@@ -25,3 +25,7 @@ elementos.
 children, por outro lado, retorna apenas os nós de elemento que são filhos diretos do elemento em questão, excluindo nós de 
 texto e nós de comentário. Isso torna o uso de children mais adequado quando você deseja trabalhar especificamente com os 
 elementos HTML filhos e não está interessado em nós de texto ou nós de comentário.
+
+Local Storage: Armazenamento que todos os navegadores tem por padrão. O armazenamento persiste mesmo após recarregar a página
+
+Application -> Local Storage -> IP
