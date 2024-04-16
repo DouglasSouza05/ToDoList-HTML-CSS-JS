@@ -24,8 +24,7 @@ body {
 .container {
   border: 3px outset purple;
   padding: 40px 20px;
-  width: 80%;
-  max-width: 800px;
+  width: 40%;
   border-radius: 10px;
 }
 
@@ -48,6 +47,11 @@ body {
   padding: 12px;
   font-weight: 500;
   cursor: pointer;
+  height: 50px;
+}
+
+.new-task-container::placeholder {
+  color: green;
 }
 
 /* Foco do Container do "Add the Task Here" quando há o click */
@@ -60,19 +64,19 @@ body {
   color: green;
 }
 
-/* Button "Add" do Input */
+/* Button "Adicionar" do Input */
 .new-task-button {
   flex: 1;
   font-size: 1rem;
   border: none;
   border-radius: 10px;
   font-weight: 500;
-  height: 100%;
   background-color: green;
   color: white;
   padding: 12px;
   margin-left: 12px;
   cursor: pointer;
+  height: 50px;
 }
 
 /* Container em que ficará as tasks criadas */
@@ -154,8 +158,9 @@ body {
 
   .new-task-button {
     width: auto;
-    margin-left: 20px;
-    margin-top: 10px;
+    margin-left: 12px;
+    height: 50px;
+    /* margin-top: 10px; */
   }
 }
 
