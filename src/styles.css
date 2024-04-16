@@ -9,13 +9,12 @@
 
 body {
   /* Defini a Altura do elemento body */
-  height: 50vi;
+  min-height: 100vh;
   background: linear-gradient(
     90deg,
     rgba(215, 43, 158) 0%,
     rgba(212, 59, 43)
   );
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,8 +24,8 @@ body {
 .container {
   border: 3px outset purple;
   padding: 40px 20px;
-  width: 40%;
-  min-width: 500px;
+  width: 80%;
+  max-width: 800px;
   border-radius: 10px;
 }
 
@@ -140,4 +139,46 @@ body {
   display: inline-block;
   margin-right: 5px;
   color: green;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 80%;
+    max-width: none;
+  }
+
+  .new-task-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .new-task-button {
+    width: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 80%;
+    max-width: none;
+  }
+
+  .new-task-container {
+    padding: 20px;
+    width: 100%;
+    max-width: none;
+    flex-direction: column;
+  }
+
+  .new-task-container input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .new-task-button {
+    width: 100%;
+    margin-left: 0;
+  }
 }
