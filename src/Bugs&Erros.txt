@@ -18,12 +18,12 @@ const handleClick = (taskContent) => {
 
 Possível explicação para o problema:
 
-childNodes retorna todos os nós filhos, incluindo nós de texto, nós de comentário e nós de elemento. Isso significa que, 
-além dos elementos HTML desejados, você também obtém nós de texto e nós de comentário que podem estar presentes entre os 
+childNodes retorna todos os nós filhos, incluindo nós de texto, nós de comentário e nós de elemento. Isso significa que,
+além dos elementos HTML desejados, você também obtém nós de texto e nós de comentário que podem estar presentes entre os
 elementos.
 
-children, por outro lado, retorna apenas os nós de elemento que são filhos diretos do elemento em questão, excluindo nós de 
-texto e nós de comentário. Isso torna o uso de children mais adequado quando você deseja trabalhar especificamente com os 
+children, por outro lado, retorna apenas os nós de elemento que são filhos diretos do elemento em questão, excluindo nós de
+texto e nós de comentário. Isso torna o uso de children mais adequado quando você deseja trabalhar especificamente com os
 elementos HTML filhos e não está interessado em nós de texto ou nós de comentário.
 
 Local Storage: Armazenamento que todos os navegadores tem por padrão. O armazenamento persiste mesmo após recarregar a página

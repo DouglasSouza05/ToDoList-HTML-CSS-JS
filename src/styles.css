@@ -1,12 +1,5 @@
 /* Código CSS */
 
-/* 
-Seletor "*" define o estilo global, para todos os elementos da página 
-"margin: 0" define a margem dos elementos
-"padding: 0" define o preenchimento de todos os elementos
-"box-sizing: border-box" defini o modelo de caixa dos elementos
-*/
-
 * {
   margin: 0;
   padding: 0;
@@ -14,43 +7,19 @@ Seletor "*" define o estilo global, para todos os elementos da página
   font-family: "Raleway", sans-serif;
 }
 
-/* Estilizando o Body */
 body {
   /* Defini a Altura do elemento body */
-  height: 100vi;
+  height: 50vi;
   background: linear-gradient(
     90deg,
     rgba(215, 43, 158) 0%,
     rgba(212, 59, 43)
   );
 
-  /* 
-  Comandos para posicionar os elementos ao centro
-  "display: flex" define o elemento body como contêiner flexível permitindo usar propriedade de alinhamento
-  "align-items: center" centraliza verticalmente dentro do flex
-  "justify:content: center" centraliza horizontalmente dentro do flex
-  */
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/* 
-  Comandos para estilizar
-  "border: " define uma borda com largura e cor
-  "padding: " define o preenchimento interno
-  "width: " define a largura do elemento como % da largura do container pai
-  "border-radius: " define um radio de borda
-  "box-shadow: " define uma sombra para o elemento
-  "display: flex" define o elemento como container flexível
-  "flex: " define a propriedade flex, usada para distribuir o espaço disponível entre elementos
-  "font-size: " define o tamanho da fonte. Unidade "rem" é relativa ao tamanho da fonte do elemento pai
-  "font-weight: " define o peso da fonte
-  "margin-left: " define uma margem esquerda para o elemento
-  "cursor: " define o cursos do mouse ao passar sobre o elemento
-  "min-width: " ocupar o minimo de px
-  */
 
 /* Estilizando o Container. Obs: "container" é o nome usado no codigo HTML */
 .container {
@@ -136,11 +105,6 @@ body {
   cursor: pointer;
 }
 
-/* Fazendo mesma coisa o ".task-item i" */
-/* .task-item i:hover {
-  cursor: pointer;
-} */
-
 .task-on {
   cursor: pointer;
 }
@@ -169,12 +133,6 @@ body {
 .completed {
   text-decoration: line-through;
 }
-
-/* .completed::before {
-  content: "\2705";
-  display: inline-block;
-  margin-right: 5px;
-} */
 
 /* Personalizando ícone para tarefa concluída */
 .completed::before {
