@@ -82,11 +82,13 @@ body {
 /* Container em que ficará as tasks criadas */
 .task-container {
   background-color: white;
-  padding: 30px 20px;
+  padding: 10px 20px;
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 0 15px 30px, rgba(0, 0, 0, 0.3);
   width: 100%;
+  min-height: 30vw;
+  height: auto;
 }
 
 /* Texto do parágrafo */
@@ -147,7 +149,7 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .container {
-    width: 80%;
+    width: 70%;
     max-width: none;
   }
 
@@ -162,11 +164,16 @@ body {
     height: 50px;
     /* margin-top: 10px; */
   }
+
+  .task-container {
+    min-height: 30vw;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .container {
-    width: 80%;
+    width: 70%;
     max-width: none;
   }
 
@@ -185,5 +192,10 @@ body {
   .new-task-button {
     width: 100%;
     margin-left: 0;
+  }
+
+  .task-container {
+    min-height: 30vw;
+    height: auto;
   }
 }
