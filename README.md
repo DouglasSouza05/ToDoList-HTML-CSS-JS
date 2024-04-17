@@ -2,7 +2,7 @@
 
 A To Do List made using HTML, CSS &amp; JavaScript
 
-Um Aplicativo simple de Lista de Tarefas criado usando HTML, CSS e JavaScript. Ele permite que você Adicione Tarefas, Marque-as como Concluídas e que também as Exclua. Projeto realizado com o objetivo de aprender o básico do Frontend, conhecendo sobre as linguagens HTML e CSS e vendo como elas interagem entre si, e também com JavaScript para criar um Projeto funcional que rode na Web.
+Um Aplicativo simples de Lista de Tarefas criado usando HTML, CSS e JavaScript. Ele permite que você Adicione Tarefas, Marque-as como Concluídas e que também as Exclua. Projeto realizado com o objetivo de aprender o básico do Frontend, conhecendo sobre as linguagens HTML e CSS e vendo como elas interagem entre si, e também com JavaScript para criar um Projeto funcional que rode na Web.
 
 ## Como Utilizar a Aplicação
 
